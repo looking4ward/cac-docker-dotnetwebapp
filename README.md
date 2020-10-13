@@ -2,20 +2,20 @@
 ## This is a Dockerized .NET Core 3.1 application of an example Covid-19 registration form. Used for educational purposes only!
 - if you check the Dockerfile you see that it uses the image mcr.microsoft.com/dotnet/core/sdk:3.1 as building environment. You can use the dotnet CLI to create applications. See: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install
 - The example webapplication was made as follows:
--- dotnet new webApp -o myWebApp --no-https
--- cd myWebApp
--- dotnet watch build
--- dotnet run
+  - dotnet new webApp -o myWebApp --no-https
+  - cd myWebApp
+  - dotnet watch build
+  - dotnet run
 - After that I created a Dockerfile inside the myWebApp folder. See example: https://docs.docker.com/engine/examples/dotnetcore/
--- Be sure all folder and .dll references to the folder named by your application (in my case 'myWebApp') !!
--- It uses a command to output the buildfiles to a folder using:
--- dotnet publish -c Release -o out
+  - Be sure all folder and .dll references to the folder named by your application (in my case 'myWebApp') !!
+  - It uses a command to output the buildfiles to a folder using:
+  - dotnet publish -c Release -o out
 - I used an example Covid-19 registration form as an example to make it look better. Original source: https://111.nhs.uk/.
 - I changed the pages:
--- ./Pages/index.cshtml
--- ./Pages/Shared/_Layout.cshtml
+  - ./Pages/index.cshtml
+  - ./Pages/Shared/_Layout.cshtml
 - And added some resources:
--- ./wwwroot/index_files/
+  - ./wwwroot/index_files/
 
 
 # How to run
