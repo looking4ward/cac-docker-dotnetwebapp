@@ -2,44 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - myWebApp</title>
+
+    <script>
+        dataLayer = [
+            {
+                'virtualPageUrl': '/GuidedSelection?q=coronavirus',
+                'virtualPageTitle': 'Covid Guided Selection Page'
+            }];
+    </script>
+
+    <link rel="icon" sizes="32x32" href="./index_files/favicon-32.png">
+    <link rel="icon" sizes="228x228" href="./index_files/favicon-228.png">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="./index_files/font.woff2">
+    <!-- css -->
+    <link href="./index_files/nhs-111.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="preload" href="./index_files/nhs-logotype-blue.svg" as="image">
+
+    <title>NHS 111 Online - Covid Guided Selection Page - @ViewData["Title"] - myWebApp</title>
+    
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Javascript -->
+    <script src="./index_files/common.js"></script>
+    <script>('HTMLDetailsElement' in window) || document.write('<script src="/Content/js/bundle-polyfills.js?a106eade1d796e502b4d197068f9fe7926e46a90"><\/script>')</script>
+    <script src="./index_files/bundle-head.js"></script>
+    
+
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">myWebApp</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="js-enabled">
+<!--[if lte IE 9]>
+    <div class="notification-banner" id="global-compatibility-banner" role="alert">
+        <p class="notification-banner--inner">This site is not optimised for your current browser please <a href="/Help/Browsers">upgrade for the best experience.</a></p>
+    </div>
+<![endif]-->
+    <div class="notification-banner" id="global-compatibility-banner" role="alert">
+        <p class="notification-banner--inner">For educational purposes only</p>
+    </div>
+<script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+     <header role="banner" class="global-header">
+        <div class="global-header__inner">
+            <a asp-area="" asp-page="/" class="global-header__logo" title="Go to the NHS 111 homepage">
+                <img src="./index_files/nhs-logotype-blue.svg" width="79" height="32" alt="NHS"> <span class="global-header__text util-digits">1 1 1</span> <span class="global-header__text">online</span>
+            </a>
+        </div>
+    </header>   
     <div class="container">
-        <main role="main" class="pb-3">
+        <section class="outer-section"></section>
+        <main role="main" class="pb-3 page-section clearfix" id="content" >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - myWebApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+   <footer role="contentinfo" class="global-footer">
+        <div class="global-footer__inner">
+            <p class="measure">
+                <a data-event-trigger="click" data-event-value="Other ways to contact 112" data-test-id="footer-language-link" target="_blank">This website is for educational purposes only. If you have need urgent assistence please contact 111 (UK) / 112 (EU) or your local doctor.</a>
+            </p>
+            <hr>
+            <nav>
+                <ul class="link-list">
+                        <li><a asp-area="" asp-page="/Privacy">Privacy statement</a></li>
+                    <li><a href="https://github.com/looking4ward/nhs-cac-docker-dotnetwebapp" target="_blank">Source</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="./index_files/bundle.js"></script>
+    <link rel="stylesheet" href="./index_files/nhs-111-print.css" media="print" type="text/css">
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

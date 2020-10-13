@@ -4,7 +4,96 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="measure">
+<form action="" method="post" novalidate="novalidate"><input data-val="true" data-val-required="&#39;SessionId&#39; must not be empty." id="SessionId" name="SessionId" type="hidden" value="5615ba11-f769-4cd2-bf03-f4b432da275d"><input data-val="true" data-val-agemaximum="Please enter a valid age" data-val-agemaximum-prefixelement="Age" data-val-ageminimum="Sorry, this service is not available for children under 5 years of age, for medical advice please call 111." data-val-ageminimum-prefixelement="Age" data-val-number="The field Age must be a number." data-val-required="Please enter your age" id="UserInfo_Demography_Age" name="UserInfo.Demography.Age" type="hidden" value="42"><input data-val="true" data-val-required="Please enter your sex" id="UserInfo_Demography_Gender" name="UserInfo.Demography.Gender" type="hidden" value="Male"><input id="CurrentPostcode" name="CurrentPostcode" type="hidden" value="SW1A2AA"><input data-val="true" data-val-required="&#39;FilterServices&#39; must not be empty." id="FilterServices" name="FilterServices" type="hidden" value="True"><input id="Campaign" name="Campaign" type="hidden" value="North West London Health and Care Partnership"><input id="Source" name="Source" type="hidden" value="NHS Central London (Westminster) CCG"><input id="StartParameter" name="StartParameter" type="hidden" value=""><input data-val="true" data-val-required="&#39;IsCovidJourney&#39; must not be empty." id="IsCovidJourney" name="IsCovidJourney" type="hidden" value="True">
+</form>    <h2 class="nhsuk-heading-xl">
+        <span class="nhsuk-caption-l">
+            Coronavirus (COVID-19)
+        </span>
+        Choose the 1 thing that’s bothering you most:
+    </h2>
+    <div class="form-group nhsuk-u-margin-top-2">
+<form action="" id="guided-selection-form" method="post" novalidate="novalidate"><input data-val="true" data-val-required="&#39;SessionId&#39; must not be empty." id="SessionId" name="SessionId" type="hidden" value="5615ba11-f769-4cd2-bf03-f4b432da275d"><input data-val="true" data-val-agemaximum="Please enter a valid age" data-val-agemaximum-prefixelement="Age" data-val-ageminimum="Sorry, this service is not available for children under 5 years of age, for medical advice please call 111." data-val-ageminimum-prefixelement="Age" data-val-number="The field Age must be a number." data-val-required="Please enter your age" id="UserInfo_Demography_Age" name="UserInfo.Demography.Age" type="hidden" value="42"><input data-val="true" data-val-required="Please enter your sex" id="UserInfo_Demography_Gender" name="UserInfo.Demography.Gender" type="hidden" value="Male"><input id="CurrentPostcode" name="CurrentPostcode" type="hidden" value="SW1A2AA"><input data-val="true" data-val-required="&#39;FilterServices&#39; must not be empty." id="FilterServices" name="FilterServices" type="hidden" value="True"><input id="Campaign" name="Campaign" type="hidden" value="North West London Health and Care Partnership"><input id="Source" name="Source" type="hidden" value="NHS Central London (Westminster) CCG"><input id="SanitisedSearchTerm" name="SanitisedSearchTerm" type="hidden" value="coronavirus"><input id="ViaGuidedSelection" name="ViaGuidedSelection" type="hidden" value="True"><input id="StartParameter" name="StartParameter" type="hidden" value=""><input id="DisplayLoadingPage" name="DisplayLoadingPage" type="hidden" value="">            <fieldset>
+                <span class="field-validation-valid error-message" data-valmsg-for="PathwayNo" data-valmsg-replace="false">Choose one option</span>
+
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Cough" value="PW976">
+                        <label for="Cough" class="multiple-choice--radio">
+                            <strong>Cough</strong>
+                            <p>Hacking, tickly or dry cough, without other cold symptoms. Coughing up phlegm or mucus.</p>
+                        </label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Hightemperaturewithnoothersymptoms" value="PW711">
+                        <label for="Hightemperaturewithnoothersymptoms" class="multiple-choice--radio">
+                            <strong>High temperature with no other symptoms</strong>
+                            <p>Fever, chills and shivering, or hot to touch, with no other symptoms.</p>
+                        </label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Lossorchangetoyoursenseofsmellortaste" value="PW1854">
+                        <label for="Lossorchangetoyoursenseofsmellortaste" class="multiple-choice--radio">
+                            <strong>Loss or change to your sense of smell or taste</strong>
+                            <p>You cannot smell or taste anything, or things smell or taste different to normal.</p>
+                        </label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Coldorflusymptoms" value="PW1042">
+                        <label for="Coldorflusymptoms" class="multiple-choice--radio">
+                            <strong>Cold or flu symptoms</strong>
+                            <p>Cough. Headache. Aching muscles. A blocked or runny nose. Sneezing. Sore throat. Pain in the face. High temperature (fever).</p>
+                        </label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Breathlessness" value="PW559">
+                        <label for="Breathlessness" class="multiple-choice--radio">
+                            <strong>Breathlessness</strong>
+                            <p>Wheezing, panting or feeling out of breath. Difficult or noisy breathing.</p>
+                        </label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="Tiredness" value="PW1072">
+                        <label for="Tiredness" class="multiple-choice--radio">
+                            <strong>Tiredness</strong>
+                            <p>Feeling tired or exhausted (fatigue) most of the time, or tiring easily.</p>
+                        </label>
+                    </div>
+                <div class="multiple-choice">
+                    <input name="PathwayNo" data-val="true" data-val-required="&#39;PathwayNo&#39; should not be empty." type="radio" class="multiple-choice__input" id="noneofthese" value="none">
+                    <label for="noneofthese" class="multiple-choice--radio"><strong>None of these</strong></label>
+                </div>
+                <button class="button--next button--spinner" id="nextScreen" type="submit" name="GuidedSelection" value="GuidedSelection">Next 
+
+<span id="loading"></span>
+
+<script type="text/javascript">
+    var opts = {
+        lines: 12, // The number of lines to draw
+        length: 4, // The length of each line
+        width: 4, // The line thickness
+        radius: 5, // The radius of the inner circle
+        color: '#fff', // #rgb or #rrggbb
+        speed: 1, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: false // Whether to use hardware acceleration
+    }
+
+    var spinner = new Spinner(opts)
+
+    function startSpinner() {
+        var target = document.getElementById('loading')
+        spinner.spin(target)
+    }
+
+    function stopSpinner() {
+        spinner.stop()
+    }
+
+    window.addEventListener("pagehide", stopSpinner)
+    window.addEventListener("pageshow", stopSpinner)
+</script>
+</button>
+            </fieldset>
+</form>    </div>
 </div>
