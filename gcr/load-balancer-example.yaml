@@ -17,5 +17,8 @@ spec:
       containers:
       - image: gcr.io/week8demo-293819/cacdotnet:2.0
         name: cacdotnet
+        env:
+        - name: PORT
+          value: 5000
         ports:
         - containerPort: 80
