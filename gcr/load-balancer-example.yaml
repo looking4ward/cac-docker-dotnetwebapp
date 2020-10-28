@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app.kubernetes.io/name: load-balancer-example
-  name: hello-world
+  name: cacdotnet
 spec:
   replicas: 5
   selector:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: gcr.io/week8demo-293819/cacdotnet:2.0
-        name: hello-world
+        name: cacdotnet
         ports:
         - containerPort: 80
