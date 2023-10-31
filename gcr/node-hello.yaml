@@ -18,4 +18,4 @@ spec:
       - image: gcr.io/week8demo-293819/cacdotnet:2.0
         name: cac
         ports:
-        - containerPort: 5000
+        - containerPort: 80
